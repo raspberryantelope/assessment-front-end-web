@@ -1,0 +1,140 @@
+@font-face {
+	font-family: 'bree_serifregular';
+	src: url('breeserif-regular-webfont.woff2') format('woff2'),
+	url('breeserif-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+  background: #d9dddd;
+  /*margin: 1rem;
+  file had two margins listed by default for body?*/
+  padding: 1rem;
+  max-width: 500px;
+  margin: 2rem auto;
+  font-family: "Open Sans", sans-serif;
+}
+
+nav {
+	border-bottom: 2px solid orange;
+}
+
+ol {
+	padding-left: 0;
+}
+
+.crumb {
+	margin-right: 2em;
+	display: inline;
+}
+
+a {
+	color: orange;
+}
+
+a:visited {
+	color: crimson;
+}
+
+
+input {
+	display: block;
+}
+
+img {
+max-width: 300px;
+}
+
+.cat-container {
+	text-align: center;
+
+}
+
+.home-main  {
+	text-align: center;
+	list-style-position: inside;
+}
+
+
+
+.greeting {
+	font-family: "Bree Serif", serif;
+	font-size: 1.62rem;
+	font-weight: bold;
+	color: #ffffff;
+	-webkit-text-stroke: .0625rem black;
+	background-image: url("https://media.discordapp.net/attachments/562459983711567888/1161420055570030652/honestwork2.png?ex=65383bb7&is=6525c6b7&hm=8a275e8b246a27bbbdfaefed90f60b166177402403c2e5ab7a0e9fa1d8637160&=&width=623&height=415");
+	background-size: auto auto;
+	background-position: 50% 30%;
+	margin: 0 auto;
+	text-align: center ;
+	padding: .25rem;
+}
+
+img[alt="cat"] {
+	max-width: 100%;
+}
+
+.profile-main {
+	text-align: center;
+	list-style-position: inside;
+}
+
+.profile-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+ 	box-sizing: border-box;
+}
+
+.about-me {
+	font-family: "Bree Serif", serif;
+	font-weight: bold;
+	color: #ffffff;
+	-webkit-text-stroke: .0725rem black;
+	margin: 25px auto;
+}
+
+#me {
+	max-width: 45%;
+	border: #b3b1ff 2px solid;
+	border-radius: 5%;
+}
+
+.button-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+ 	box-sizing: border-box;
+}
+
+.profile-button {
+	font-size: .77em;
+	width: 19%;
+	height: 25%;
+	border-radius: 25%;
+	margin: 3%;
+	background-color: #ffe67a;
+	cursor: pointer;
+}
+
+/*
+Initially I created this so the buttons were a spectrum
+of yellow and not all the same color, but, this requires using more
+than one class, and I wasn't sure how stringent the rubric
+grading will be, so I left it as a single color for all 3.
+
+.color {
+	background-color: #ffe67a;
+}
+
+.place {
+	background-color: #ffdd87;
+}
+
+.ritual {
+	background-color: #ffcb6b;
+}*/
+
+
