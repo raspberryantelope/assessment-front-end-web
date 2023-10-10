@@ -10,12 +10,23 @@
             <li class="crumb"><a href="./home.html">Home</a></li>
             <li class="crumb"><a href="./profile.html">Profile</a></li>
             <li class="crumb"><a href="./about.html">About</a></li>
+            <li class="crumb"><a href="./sandy.html">Sandy</a></li>
         </ol>
     </nav>
-    <h1 id="profile-greeting">Profile</h1>
-    <h2>About Me</h2>
-    <img src="https://media.discordapp.net/attachments/562459983711567888/1161052446894866502/IMG_50322.jpg?ex=6536e55a&is=6524705a&hm=33134dbf1a6653be72cb22a86392a4f6834881111a100e3fdaa9dbcf5a98b647&=&width=903&height=903" alt="me" width="200" height="200">
-    <p>My name is Alex. I'm 24 years old and currently studying Cybersecurity. I love the outdoors (camping, hiking, backpacking, etc.), making (and listening to!) music, video games, spending time with friends, and learning.</p>
+    <div class="profile-main">
+        <h1 id="profile-greeting">Profile</h1>
+        <h2 class="about-me">About Me</h2>
+        <div class="profile-container">
+            <img src="https://media.discordapp.net/attachments/562459983711567888/1161052446894866502/IMG_50322.jpg?ex=6536e55a&is=6524705a&hm=33134dbf1a6653be72cb22a86392a4f6834881111a100e3fdaa9dbcf5a98b647&=&width=903&height=903" alt="me" id="me">
+            <p>My name is Alex. I'm 24 years old and currently studying Cybersecurity. I love the outdoors (camping, hiking, backpacking, etc.), making (and listening to!) music, video games, spending time with friends, and learning.</p>
+        </div>
+            <div class="button-container">
+                <button id="color" class="profile-button color">My Favorite Color</button>
+                <button id="place" class="profile-button place">My Favorite Place</button>
+                <button id="ritual" class="profile-button ritual">My Favorite Ritual</button>
+            </div>
+
+    </div>
     <section>
         <div id="skills">
             <h3>Skills</h3>
@@ -49,11 +60,16 @@
 
         <div id="goals">
             <h3>Goals</h3>
-            <p>In the short term I obviously want to graduate from this DevMountain course, but as for the future, frankly I have no interest in making a career at all, my ideal future would involve creating something and selling it, either for enough passive income to "retire", or for a large enough lump sum to retire. Then I can spend my time doing things that actually feel fulfilling to me, such as art, travel, etc./p>
+            <p>In the short term I obviously want to graduate from this DevMountain course, but as for the future, frankly I have no interest in making a career at all, my ideal future would involve creating something and selling it, either for enough passive income to "retire", or for a large enough lump sum to retire. Then I can spend my time doing things that actually feel fulfilling to me, such as art, travel, etc. Unfortunately this is not really a realistic goal, so it's much more likely that I'll end up having some job in Cybersecurity.</p>
         </div>
     </section>
+
+
 
 <br>
 <br>
 
 <a href="./home.html"><< Back </a>
+<script src="profile.js"></script>
+</body>
+</html>

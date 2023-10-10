@@ -11,21 +11,29 @@
 	        <li class="crumb"><a href="./home.html">Home</a></li>
 	        <li class="crumb"><a href="./profile.html">Profile</a></li>
 	        <li class="crumb"><a href="./about.html">About</a></li>
+			<li class="crumb"><a href="./sandy.html">Sandy</a></li>
 	    </ol>
 	</nav>
 
-	<slot>
+	<slot> <!--this element was originally here as "content", but my IDE flagged it as being "a deprecated element, now to be replaced by 'slot'"-->
+		<div class="home-main">
 		<h1>Welcome to this little website.</h1>
 		<p>Hello World!</p>
 
-		<img src="https://cdn.discordapp.com/attachments/562459983711567888/1161034651595444405/mirri_transparent_web.png?ex=6536d4c7&is=65245fc7&hm=fb9e6d2edaaa71abe61e2fe103c97903b79bf6b35db77ca72b3e93f2ba492786&" id="cat" alt="cat">
-		<p>We don't have much, but it's an honest site.
-			<ul>
-				<li>You're looking nice today... </li>
-				<li>Nice and regal, just like this cat.</li>
-				<li>Have a nice day!</li>
-			</ul>
+		<p class="greeting" id="greet"><br>"We ain't much, but we're an honest site."<br><br></p>
+
+		<div class="cat-container">
+			<img src="https://cdn.discordapp.com/attachments/562459983711567888/1161034651595444405/mirri_transparent_web.png?ex=6536d4c7&is=65245fc7&hm=fb9e6d2edaaa71abe61e2fe103c97903b79bf6b35db77ca72b3e93f2ba492786&" id="cat" alt="cat">
+		</div>
+		<ul>
+			<li>You're looking nice today! </li>
+			<li>Nice and regal, just like this cat.</li>
+			<li>Have a nice day!</li>
+		</ul>
+
+
 <!--		<img src="https://i.imgur.com/Z5kwg2q.png" alt="elroy" width="200" height="100">-->
+		</div>
 		<h2>Contact Us</h2>
 		<form id="contact">
 			<label>
@@ -38,7 +46,7 @@
 				<!--<input type="textarea">
 				This line was originally written this way, but my IDE flagged
 				"textarea" as not being a valid attribute value.
-				Was this intentional or should it have just been text from the beginning?
+				Was this intentional or should it have just been "text" from the beginning?
 				Changing it to just be text didn't affect site functionality.-->
 				<input type="text">
 			</label>
@@ -50,25 +58,17 @@
 				<input type="checkbox">
 			</label>
 
-
 			<label>
 				A friend
 				<input type="checkbox">
 			</label>
-
-
 
 			<label>
 				Other
 				<input type="checkbox">
 			</label>
 
-
 			<input type="submit">
-
-
-
-
 		</form>
 
 	</slot>

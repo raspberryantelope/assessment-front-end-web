@@ -1,4 +1,3 @@
-console.log("hello world");
 
 function handleSubmit(evt) {
 	evt.preventDefault();
@@ -8,7 +7,7 @@ function handleSubmit(evt) {
 
 let cat = document.querySelector("#cat");
 cat.addEventListener("mouseover" , function(){
-	alert("You're looking nice today...");
+	alert("You're looking nice today!");
 })
 
 let form = document.querySelector('#contact');
